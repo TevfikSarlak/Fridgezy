@@ -16,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar startButton={startButton}
+              setStartButton={setStartButton}
+              handleStartButton={handleStartButton} />
        {startButton ? <SearchMeal /> 
        : <Intro startButton={startButton}
                 setStartButton={setStartButton}
