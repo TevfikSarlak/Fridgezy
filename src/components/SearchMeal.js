@@ -20,7 +20,9 @@ function SearchMeal() {
   const [backgroundColorMap, setBackgroundColorMap] = useState({});
   const [suggestions, setSuggestions] = useState([]);
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
 
@@ -165,6 +167,9 @@ const getSuggestions = (input) => {
       );
 };
 
+const formattedNumber = number.toFixed(1).replace(/\.0$/, '');
+
+
                       
   
   
@@ -239,10 +244,11 @@ const getSuggestions = (input) => {
         >Please provide a number of meal suggestions:</label></div>
         
         <div>
-            <input type="number" 
+            <input  type="number"
+                
                 min={1}
                 max={20}
-                value={number}
+                value={formattedNumber}
                 onChange={handleNumber}
                 className="h-8 w-16 px-3 py-1 md:px-5 md:py-3  border-2 items-center text-center space-x-2 
                            rounded-md font-carlito focus:outline-none font-semibold text-slate-600

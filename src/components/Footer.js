@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             <div className="md:pt-8 flex flex-col justify-center">
-                <img src="/images/bmc-button.png" alt="Buy Me a Coffee" className="h-8 w-24 mx-auto md:ml-0
+                <img src="/asset/bmc-button.png" alt="Buy Me a Coffee" className="h-8 w-24 mx-auto md:ml-0
                          md:h-16 md:w-48 hover:scale-105" />
             </div>
          </div>
