@@ -1,6 +1,13 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import LazyLoad from 'react-lazyload';
+import IntroOne from "./images/Intro-one.jpg";
+import IntroThree from "./images/Intro-three.jpg";
+import IntroTwo from "./images/Intro-two.jpg";
+import IntroFour from "./images/Intro-four.jpg";
+import IntroFive from "./images/Intro-five.jpg";
+import IntroSix from "./images/Intro-six.jpg";
+import IntroSeven from "./images/Intro-seven.jpg";
+import { Skeleton } from '@mui/material';
 
 
 
@@ -40,12 +47,11 @@ export default function Intro(props) {
     <div className="w-full mt-24">
           <div className="flex flex-col md:grid md:grid-cols-2 space-y-4">
             <div className="mx-auto ">
-              <LazyLoad>
-                 <img src="/images/Intro-one.jpg" 
+              { !isLoading ? ( <img src={IntroOne}
                      alt="Intro-one"
                      className="h-96 drop-shadow-2xl intro-image rounded-md"
-                />     
-              </LazyLoad> 
+                />     ) : (<Skeleton variant="rectangular" width={210} height={315} />)}  
+              
             </div>
 
             <div className=" mx-auto font-carlito ">
@@ -77,60 +83,76 @@ export default function Intro(props) {
 
             <div>
             <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24 drop-shadow-2xl">
-                <div class="-m-1 flex flex-wrap md:-m-2">
+                {!isLoading ? (<div class="-m-1 flex flex-wrap md:-m-2">
                     <div class="flex w-1/2 flex-wrap">
                     <div class="w-1/2 p-1 md:p-2">
-                      <LazyLoad>
-                         <img
+                      <img
                         alt="Intro-three"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-three.jpg" />
-                      </LazyLoad> 
+                        src={IntroThree} />
+                        
+                      
+                       
                     </div>
                     <div class="w-1/2 p-1 md:p-2">
-                      <LazyLoad>
+                      
                          <img
                         alt="Intro-two"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-two.jpg" />
-                      </LazyLoad>   
+                        src={IntroTwo}/>
+                      
+                         
                     </div>
                     <div class="w-full p-1 md:p-2">
-                      <LazyLoad>
+                      
                         <img
                         alt="Intro-four"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-four.jpg" />
-                      </LazyLoad>   
+                        src={IntroFour} />
+                      
+                         
                     </div>
                     </div>
                     <div class="flex w-1/2 flex-wrap">
                     <div class="w-full p-1 md:p-2">
-                      <LazyLoad>
+                      
                          <img
                         alt="Intro-five"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-five.jpg" />
-                      </LazyLoad>   
+                        src={IntroFive} />
+                      
+                         
                     </div>
                     <div class="w-1/2 p-1 md:p-2">
-                      <LazyLoad>
+                      
                          <img
                         alt="Intro-six"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-six.jpg" />
-                      </LazyLoad>  
+                        src={IntroSix} />
+                      
+                        
                     </div>
                     <div class="w-1/2 p-1 md:p-2">
-                      <LazyLoad>
+                      
                         <img
                         alt="Intro-seven"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-seven.jpg" />
-                      </LazyLoad>        
+                        src={IntroSeven} />
+                      
+                              
                     </div>
                     </div>
-                </div>
+                </div>): (
+                  <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
+                    <Skeleton variant="rectangular" width={210} height={118} />
+                    <Skeleton variant="rectangular" width={210} height={118} />
+                    <Skeleton variant="rectangular" width={210} height={118} />
+                    <Skeleton variant="rectangular" width={210} height={118} />
+                    <Skeleton variant="rectangular" width={210} height={118} />
+                    <Skeleton variant="rectangular" width={210} height={118} />
+                  </div>
+                )}
+
                 </div>
             </div>
 
