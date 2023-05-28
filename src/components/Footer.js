@@ -4,7 +4,7 @@ import { FaInstagram, FaTwitter, FaGithub, FaPinterest } from 'react-icons/fa';
 export default function Footer() {
   return (
     <div>
-      <footer className="bg-green-700 h-120 mt-24">
+      <footer className="bg-green-700 h-120 mt-96">
         <div className="flex flex-col md:grid md:grid-cols-3 mx-auto w-full py-4">
           <div>
             <div className="hidden md:block">
