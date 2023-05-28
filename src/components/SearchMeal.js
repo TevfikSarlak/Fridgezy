@@ -195,10 +195,10 @@ const getSuggestions = (input) => {
                
                <div className="static">
                   <div className="relative">
-                    <div className="absolute z-10 w-80 md:w-96 bg-slate-50 text-slate-600 font-carlito cursor-pointer">
+                    <div className="absolute z-10 w-80 md:w-96 bg-slate-50 text-slate-600 font-carlito cursor-pointer mb-24">
                       <ul>
                         {suggestions.map((suggestion) => (
-                          <li key={suggestion} onClick={() => handleSuggestionClick(suggestion)} className="hover:bg-slate-300">
+                          <li key={suggestion} onClick={() => handleSuggestionClick(suggestion)} className="hover:bg-slate-300 ">
                             {suggestion}
                           </li>
                         ))}
