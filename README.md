@@ -7,7 +7,7 @@ Fridgezy is a web application that helps users make the most out of the ingredie
 - **Ingredient-Based Suggestions**: Users can input the ingredients they have in their fridge and receive suggestions and recipes based on those ingredients.
 - **Missing Ingredients**: Fridgezy identifies the missing ingredients needed for a specific recipe and provides recommendations for completing the dish.
 - **Unused Ingredients**: The app suggests recipes and ideas for using up unused ingredients to reduce food waste.
-- **Authentication**: Users can create accounts, log in, and save their favorite recipes for future reference.
+- **Authentication (Upcoming)**: Users can create accounts, log in, and save their favorite recipes for future reference.
 - **Image Upload (Upcoming)**: Users will be able to upload images of dishes they want to cook, and the app will provide recipes based on the uploaded image.
 - **Image Recognition (Upcoming)**: Fridgezy will utilize image recognition technology to analyze images of ingredients in the user's fridge and suggest recipes based on those ingredients.
 - **Shopping List (Upcoming)**: Users will be able to create and manage a shopping list within the app, making it easier to note the ingredients they need to buy.
