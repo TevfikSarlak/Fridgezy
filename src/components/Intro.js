@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import IntroOne from "./images/Intro-one.jpg";
 import IntroThree from "./images/Intro-three.jpg";
 import IntroTwo from "./images/Intro-two.jpg";
 import IntroFour from "./images/Intro-four.jpg";
@@ -47,7 +46,7 @@ export default function Intro(props) {
     <div className="w-full mt-24">
           <div className="flex flex-col md:grid md:grid-cols-2 space-y-4">
             <div className="mx-auto ">
-              { !isLoading ? ( <img src={IntroOne}
+              { !isLoading ? ( <img src="./images/Intro-one.jpg"
                      alt="Intro-one"
                      className="h-96 drop-shadow-2xl intro-image rounded-md"
                 />     ) : (<Skeleton variant="rectangular" width={210} height={315} />)}  
