@@ -82,7 +82,7 @@ export default function Intro(props) {
                       <img
                         alt="Intro-three"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-three.jpg" />
+                        src="./images/Intro-three.jpg" />
                         
                       
                        
@@ -92,7 +92,7 @@ export default function Intro(props) {
                          <img
                         alt="Intro-two"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-two.jpg"/>
+                        src="./images/Intro-two.jpg"/>
                       
                          
                     </div>
@@ -101,7 +101,7 @@ export default function Intro(props) {
                         <img
                         alt="Intro-four"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-four.jpg"/>
+                        src="./images/Intro-four.jpg"/>
                       
                          
                     </div>
@@ -112,7 +112,7 @@ export default function Intro(props) {
                          <img
                         alt="Intro-five"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-five.jpg" />
+                        src="./images/Intro-five.jpg" />
                       
                          
                     </div>
@@ -121,7 +121,7 @@ export default function Intro(props) {
                          <img
                         alt="Intro-six"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-six.jpg"/>
+                        src="./images/Intro-six.jpg"/>
                       
                         
                     </div>
@@ -130,7 +130,7 @@ export default function Intro(props) {
                         <img
                         alt="Intro-seven"
                         class="block h-full w-full rounded-lg object-cover object-center intro-image"
-                        src="/images/Intro-seven.jpg" />
+                        src="./images/Intro-seven.jpg" />
                       
                               
                     </div>
