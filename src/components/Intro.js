@@ -27,14 +27,6 @@ export default function Intro(props) {
       };
     }, []);
 
-    if (isLoading) {
-        return (
-          <div className="flex items-center justify-center h-screen bg-white">
-            <p className="text-xl">Loading...🍕🍔🍟🥙🍗🥩</p>
-          </div>
-        );
-      }
-
 
   return (
     <div className="w-full mt-24">
@@ -42,7 +34,7 @@ export default function Intro(props) {
             <div className="mx-auto ">
               { !isLoading ? ( <img src="/images/Intro-one.jpg"
                      alt="Intro-one"
-                     className="h-96 drop-shadow-2xl intro-image rounded-md"
+                     className="h-96 drop-shadow-2xl intro-image rounded-md intro-image"
                 />     ) : (<Skeleton variant="rectangular" width={210} height={315} />)}  
               
             </div>
