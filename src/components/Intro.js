@@ -67,9 +67,9 @@ export default function Intro(props) {
                 <p className="ml-16 md:ml-32 text-left text-3xl md:text-4xl text-orange-400 font-thin mb-6"
                 >YOU WILL SEE:</p>
                 <ul className="list-disc text-slate-400  ml-8 md:ml-32 text-left  font-carlito">
-                    <li className="mb-6">what are your <span className="text-green-500 font-semibold">missing ingredienst</span> to cooking</li>
-                    <li className="mb-6">what are your <span className="text-orange-500 font-semibold">unused ingredienst</span></li>
-                    <li className="mb-6">And you can get <span className="text-slate-700 font-semibold">instructions</span></li>
+                    <li className="mb-6">what are your <span className="text-green-500 font-semibold">missing ingredients</span> to cooking</li>
+                    <li className="mb-6">what are your <span className="text-orange-500 font-semibold">unused ingredients</span></li>
+                    <li className="mb-6">and you can get <span className="text-slate-700 font-semibold">instructions</span></li>
                 </ul>
                 
             </div>
