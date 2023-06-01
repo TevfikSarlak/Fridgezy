@@ -6,7 +6,7 @@ import { useRef } from 'react';
 
 
 function SearchMeal() {
-  const appKey = "4e2876b4a1f3461498d7cb68c911ede8";
+  const appKey = process.env.REACT_APP_API_KEY;
   const [data, setData] = useState(null);
   const [ingredient, setIngredient] = useState("");
   const [listIngredients, setListIngredients] = useState([]);
