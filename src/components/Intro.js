@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Skeleton } from '@mui/material';
 
 
@@ -26,6 +26,37 @@ export default function Intro(props) {
         });
       };
     }, []);
+
+    console.log("hello")
+
+    const renderImage = (src) => {
+      return (
+        <div className="w-1/2 p-1 md:p-2">
+          {!isLoading ? (
+            <img
+              src={src}
+              alt="Intro image"
+              className="block h-full w-full rounded-lg object-cover object-center intro-image"
+            />
+          ) : (
+            <Skeleton variant="rectangular" width={210} height={118} />
+          )}
+        </div>
+      );
+    };
+
+  const renderedImages = useMemo(() => {
+    return [
+      "/images/Intro-three.jpg",
+      "/images/Intro-two.jpg",
+      "/images/Intro-four.jpg",
+      "/images/Intro-five.jpg",
+      "/images/Intro-six.jpg",
+      "/images/Intro-seven.jpg"
+    ].map((src, index) => <React.Fragment key={index}>{renderImage(src)}</React.Fragment>);
+  }, [isLoading]);
+
+
 
 
   return (
