@@ -25,7 +25,7 @@ function SearchMeal() {
   }, []);
 
 
-
+ // Fetch API data when search is clicked
   useEffect(() => {
     if (searchClicked) {
       fetch(
@@ -44,6 +44,7 @@ function SearchMeal() {
   }, [listIngredients, searchClicked]);
 
   useEffect(() => {
+    // Fetch recipe instructions when selected recipe ID changes
     if (selectedRecipeId) {
       fetch(
         `https://api.spoonacular.com/recipes/${selectedRecipeId}/information?apiKey=${appKey}`
@@ -56,7 +57,7 @@ function SearchMeal() {
   }, [selectedRecipeId]);
 
   const handleSearch = () => {
-    setSearchClicked(true);
+    setSearchClicked(true);// Trigger API call on search button click
   };
 
   const foodList = [
@@ -230,11 +231,11 @@ const formattedNumber = number.toFixed(1).replace(/\.0$/, '');
 
                               
 
-                              </div> 
+              </div> 
                             
-                        </div>
+            </div>
                         
-                      </div>
+          </div>
       
       
       
