@@ -1,6 +1,6 @@
 # Fridgezy
 
-[www.fridgezy.com](www.fridgezy.com)
+[www.fridgezy.com](https://fridgezy-k5n2.vercel.app/)
 
 ![Fridgezy-snapshot](public/images/Fridgezy-Readme.PNG)
 
