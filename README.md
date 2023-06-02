@@ -1,6 +1,6 @@
 # Fridgezy
 
-![Fridge-snapshots](public/images/Fridgezy-Readme.PNG)
+<img src="/images/Fridgezy-Readme.PNG" alt="Fridgezy screenshots"/>
 
 Fridgezy is a web application that helps users make the most out of the ingredients available in their fridge. It provides suggestions, tips, and recipes based on the ingredients provided, as well as highlights missing ingredients for specific meals and unused ingredients. The app also offers authentication features to save recipes, and in the future, it will include image upload and image recognition capabilities. Additionally, Fridgezy will introduce two upcoming features: shopping list and my fridge.
 
