@@ -1,6 +1,6 @@
 # Fridgezy
 
-![link](https://www.fridgezy.com)
+[www.fridgezy.com](https://www.fridgezy.com)
 
 ![Fridgezy-snapshot](public/images/Fridgezy-Readme.PNG)
 
