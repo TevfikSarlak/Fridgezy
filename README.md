@@ -60,7 +60,7 @@ Fridgezy is a web application that helps users make the most out of the ingredie
 
 - [ ] Backend Development (Authentication) with Firebase
 - [ ] Uploading meal images
-- [ ] Image recognition (with attribute checking)
+- [ ] Image recognition 
 
 
 ## Contributing
