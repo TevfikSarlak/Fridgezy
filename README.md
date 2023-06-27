@@ -56,6 +56,13 @@ Fridgezy is a web application that helps users make the most out of the ingredie
 6. **Upcoming Feature**: Create and manage your shopping list to keep track of the ingredients you need to buy.
 7. **Upcoming Feature**: Save the contents of your fridge and view/manage them whenever you open the app.
 
+## Todo List
+
+- [ ] Backend Development (Authentication) with Firebase
+- [ ] Uploading meal images
+- [ ] Image recognition (with attribute checking)
+
+
 ## Contributing
 
 Contributions to Fridgezy are welcome! If you'd like to contribute, please follow these steps:
