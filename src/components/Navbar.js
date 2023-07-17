@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar (props) {
 
@@ -7,10 +8,6 @@ export default function Navbar (props) {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
-    const alertFeature = () => {
-        alert("This Feature will be available in a short time")
-    }
 
     return (
         <div>
@@ -23,12 +20,12 @@ export default function Navbar (props) {
                         className="text-orange-500 hover:text-white">ZY</span></a>
                     </div>
                     <div class="flex md:order-2">
-                        <button 
+                        <NavLink 
+                            to="/findmeal"
                             type="button" 
-                            onClick={() => props.handleStartButton()}
                             className="text-white bg-orange-700 hover:bg-orange-500 focus:ring-4 
                                       focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-base px-4 py-2 text-center mr-3 md:mr-0"
-                        >Find Your Meal</button>
+                        >Find Your Meal</NavLink>
 
                         <button
                             type="button"
@@ -89,21 +86,18 @@ export default function Navbar (props) {
                             <li>
                                 <a 
                                     href="#"
-                                    onClick={alertFeature}
                                     className="block py-2 pl-3 pr-4 text-white hover:text-orange-500 md:p-1 md:hover:border-b-white"
                                 >SHOPPING LIST</a>
                             </li>
                             <li>
                                 <a 
                                     href="#" 
-                                    onClick={alertFeature}
                                     className="block py-2 pl-3 pr-4 text-white hover:text-orange-500 md:p-1 md:hover:border-b-white"
                                 >MY FRIDGE</a>
                             </li>
                             <li>
                                 <a 
-                                    href="#"
-                                    onClick={alertFeature} 
+                                    href="#" 
                                     className="block py-2 pl-3 pr-4 text-white hover:text-orange-500 md:p-1 md:hover:border-b-white"
                                 >LOG IN | SIGN UP</a>
                             </li>

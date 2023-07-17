@@ -1,32 +1,24 @@
-import "./App.css";
-import SearchMeal from "./components/SearchMeal";
-import { useState } from "react";
+import React, { useState }  from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import FindMeal from "./components/FindMeal";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Intro from "./components/Intro";
-
+import Home from "./components/Home";
+import Rootlayout from "./layouts/Rootlayout";
 
 
 function App() {
-  
-  const [startButton, setStartButton] = useState(false);
-
-  const handleStartButton = () => {
-    setStartButton(true)
-  }
-
+ 
   return (
     <div className="App">
-      <Navbar startButton={startButton}
-              setStartButton={setStartButton}
-              handleStartButton={handleStartButton} />
-        
-       {startButton ? <SearchMeal /> 
-       : <Intro startButton={startButton}
-                setStartButton={setStartButton}
-                handleStartButton={handleStartButton} />}
-        
-      <Footer />          
+      <Router>
+         <Routes>
+            <Route path="/" element={<Rootlayout />} >
+              <Route index path="/" element={<Home />} />
+              <Route path="/findmeal" element={<FindMeal />} />
+            </Route>
+         </Routes>
+      </Router>          
     </div>
   );
 }
