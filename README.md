@@ -1,5 +1,7 @@
 # Fridgezy
 
+[www.fridgezy.com](https://fridgezy-k5n2.vercel.app/)
+
 ![Fridgezy-snapshot](public/images/Fridgezy-Readme.PNG)
 
 Fridgezy is a web application that helps users make the most out of the ingredients available in their fridge. It provides suggestions, tips, and recipes based on the ingredients provided, as well as highlights missing ingredients for specific meals and unused ingredients. The app also offers authentication features to save recipes, and in the future, it will include image upload and image recognition capabilities. Additionally, Fridgezy will introduce two upcoming features: shopping list and my fridge.
@@ -53,6 +55,13 @@ Fridgezy is a web application that helps users make the most out of the ingredie
 5. Save your favorite recipes for future reference (authentication feature).
 6. **Upcoming Feature**: Create and manage your shopping list to keep track of the ingredients you need to buy.
 7. **Upcoming Feature**: Save the contents of your fridge and view/manage them whenever you open the app.
+
+## Todo List
+
+- [ ] Backend Development (Authentication) with Firebase
+- [ ] Uploading meal images
+- [ ] Image recognition 
+
 
 ## Contributing
 
